@@ -48,6 +48,7 @@ My goal is to become a strong AI/ML engineer and work at top tech companies like
 
 - ✅ CS50x
 - ✅ CS50's Introduction to Programming with Python
+- ✅ Machine Learning Specialization — Andrew Ng (Coursera)
 - ✅ Calculus & Linear Algebra (Khan Academy)
 
 ---
