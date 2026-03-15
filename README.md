@@ -1,8 +1,8 @@
 
 # Hi there, I am Topu 👋
 
-🎓 **1st Year ECE @ RUET, Bangladesh**  
-⚙️ **Backend Developer** | 🤖 **Aspiring AI/ML Engineer** | 🧩 **Problem Solver**
+🎓 **ECE Undergraduate @ RUET, Bangladesh**  
+⚙️ **Backend Developer (Python, FastAPI)** | 🤖 **Aspiring AI/ML Engineer** | 🧩 **Problem Solver**
 
 I focus on learning deeply, building real systems, and writing code that has real-world impact.  
 My goal is to become a strong AI/ML engineer and work at top tech companies like **Google** or **Microsoft**.
