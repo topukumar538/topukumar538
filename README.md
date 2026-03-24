@@ -65,7 +65,12 @@ I focus on learning deeply, building real systems, and writing code that has rea
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=topukumar538&show_icons=true&theme=tokyonight&hide_border=true" width="48%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=topukumar538&layout=compact&theme=tokyonight&hide_border=true&hide=html,css" width="40%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=topukumar538
+&layout=compact&theme=tokyonight&hide_border=true
+&hide=html,css
+&count_private=true
+&include_all_commits=true
+&langs_count=6" width="40%"/>
 </p>
 
 <p align="center">
