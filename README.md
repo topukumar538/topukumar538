@@ -1,6 +1,6 @@
 
 # Hi there, I am Topu 👋
-
+ 
 🎓 **ECE Undergraduate @ RUET, Bangladesh**  
 ⚙️ **Backend Developer (Python, FastAPI)** | 🤖 **Aspiring AI/ML Engineer** | 🧩 **Problem Solver**
 
