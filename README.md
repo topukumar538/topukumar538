@@ -1,7 +1,7 @@
 # Hi, I'm Topu Kumar Mondol
 
 🎓 ECE Undergraduate @ RUET, Bangladesh
-🛠️ Backend Engineer (Python · FastAPI · PostgreSQL) | 🤖 AI Systems Builder
+🛠️ Backend Engineer (Python · FastAPI · PostgreSQL) | AI Systems Builder
 
 I focus on building production-quality backend systems and AI-powered applications — not tutorials, real systems with real design decisions.
 
