@@ -82,7 +82,6 @@ I focus on building production-quality backend systems and AI-powered applicatio
 ## 🎯 Currently
 
 - 📌 Solving 250+ LeetCode problems — arrays, trees, graphs, binary search
-- 📌 Preparing for Summer 2027 SWE internship applications
 
 ---
 
