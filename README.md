@@ -1,71 +1,126 @@
 # Hi, I'm Topu Kumar Mondol
 
-ECE Undergraduate @ RUET '28, Bangladesh
-Backend Engineer (Python · FastAPI · PostgreSQL) | AI Systems Builder
+🎓 ECE Undergraduate @ RUET, Bangladesh
 
-I build production-quality backend systems and AI-powered applications — real systems with real design decisions, not tutorials.
+ Backend Engineer (Python · FastAPI · PostgreSQL) | AI Systems Builder
 
-[LinkedIn]({LINKEDIN_URL}) · [Email](mailto:{EMAIL})
+I focus on building production-quality backend systems and AI-powered applications — not tutorials, real systems with real design decisions.
 
 ---
 
 ## Projects
 
 ### OpsIQ — AI-Powered Ops Intelligence Platform
-> Multi-agent incident investigation system built on LangGraph
 
-[Code]({OPSIQ_REPO_URL}) · [Live Demo]({HUGGINGFACE_SPACE_URL}) · [Architecture]({OPSIQ_REPO_URL}#architecture)
+> Multi-agent incident investigation system using LangGraph
 
-![CI]({OPSIQ_REPO_URL}/actions/workflows/ci.yml/badge.svg)
+- Architected a 3-mode AI assistant (Chat, RAG, Automated Postmortem) with a parallel LangGraph pipeline and 3 specialized LLM instances per session
 
-- Architected a 3-mode assistant (Chat, RAG, Automated Postmortem) on a LangGraph StateGraph pipeline: `log_agent → rootcause_agent → remediation_agent`
-- Validated against 3 real production postmortems — GitLab 2017, Cloudflare 2019, AWS us-east-1 2020 — with root cause category matching confirmed
-- Confidence-aware pipeline halts and asks clarifying questions when the evidence score drops below 60%, rather than emitting a low-confidence root cause
-- Stateless HMAC-SHA256 session tokens with server-side TTL enforcement — no session table, horizontally scalable
-- Containerized with Docker and deployed to Hugging Face Spaces with a hosted Postgres backend (Neon)
-- 64 passing tests (unit + integration)
+- Validated against 3 real production postmortems — GitLab 2017, Cloudflare 2019, AWS 2020 — root cause category matching confirmed
 
-**Stack:** FastAPI · LangGraph · LangChain · FAISS · PostgreSQL · SQLAlchemy 2.0 · Docker · Groq (Llama 3.3 70B)
+- Confidence-aware pipeline — halts and asks clarifying questions when evidence score drops below 60%
+
+- Stateless HMAC-SHA256 session tokens with server-side TTL enforcement — sub-millisecond auth latency
+
+- 64 passing tests (unit + integration) · FastAPI · LangGraph · LangChain · FAISS · PostgreSQL · Groq (Llama 3.3 70B)
 
 ### ContentPlatform — Personalized Recommendation Engine
-> Production-style backend with a 3-tier softmax explore–exploit ranking algorithm
 
-[Code]({CONTENTPLATFORM_REPO_URL}) · [Live Demo]({CONTENTPLATFORM_DEMO_URL})
+> Production-style backend with a 3-tier Softmax explore–exploit algorithm
 
-- 3-tier hybrid ranking: deterministic exploit → softmax sampling (temp=0.7) → ε-greedy 10% injection, to counter filter-bubble collapse
-- Exponential time decay `exp(−t/24h)` with interaction-weighted category preferences, recalculated every 10 minutes via a background scheduler
-- Load-tested with Locust at 100 concurrent users: ~800ms p95 latency
-- 42 tests covering softmax correctness, auth lifecycle, admin RBAC, and race-condition prevention
+- 3-tier hybrid ranking: deterministic exploit → Softmax sampling (temp=0.7) → ε-greedy 10% injection — solves filter bubble problem
 
-**Stack:** FastAPI · PostgreSQL · SQLAlchemy 2.0 · JWT + OTP Auth · APScheduler · Pytest · Locust
+- Exponential time decay exp(−t/24h) + interaction-weighted category preferences, recalculated every 10 min via background scheduler
 
----
+- Load-tested with Locust: 99% success rate at 100 concurrent users (~800ms p95)
 
-## Tech Stack
+- 42 tests covering softmax correctness, auth lifecycle, admin RBAC, race-condition prevention
 
-**Languages** — Python · C++ · C · SQL
-**Backend** — FastAPI · PostgreSQL · SQLAlchemy 2.0 · REST APIs · Docker
-**AI / ML** — LangChain · LangGraph · FAISS · RAG pipelines
-**Tools** — Git · GitHub Actions · Pytest · Locust · Linux
+- FastAPI · PostgreSQL · SQLAlchemy 2.0 · JWT + OTP Auth · APScheduler · Pytest · Locust
 
 ---
 
-## Certifications
+## 🛠️ Tech Stack
 
-- Machine Learning Specialization — DeepLearning.AI (Andrew Ng)
-- CS50x — Harvard
-- CS50P — Harvard
+**Languages**
+
+<p>
+
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
+
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"/>
+
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+
+</p>
+
+**Backend & Database**
+
+<p>
+
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+
+  <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white"/>
+
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+
+</p>
+
+**AI / ML**
+
+<p>
+
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"/>
+
+  <img src="https://img.shields.io/badge/LangGraph-FF6B6B?style=for-the-badge&logoColor=white"/>
+
+  <img src="https://img.shields.io/badge/FAISS-007ACC?style=for-the-badge&logoColor=white"/>
+
+</p>
 
 ---
 
-## Currently
+## 📚 Certifications
 
-- 250+ LeetCode problems solved — arrays, trees, graphs, binary search
-- Preparing for Summer 2027 SWE internship applications
-- Microsoft Learn Student Ambassador
+- ✅ Machine Learning Specialization — Andrew Ng / DeepLearning.AI (Coursera)
+
+- ✅ CS50x — Harvard
+
+- ✅ CS50P — Harvard
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+
+  <img src="https://github-readme-stats.vercel.app/api?username=topukumar538&show_icons=true&theme=tokyonight&hide_border=true" width="48%"/>
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=topukumar538&layout=compact&theme=tokyonight&hide_border=true&hide=html,css&langs_count=6" width="40%"/>
+
+</p>
+
+<p align="center">
+
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=topukumar538&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+---
+
+## 🎯 Currently
+
+- 📌 Solving 250+ LeetCode problems — arrays, trees, graphs, binary search
 
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=topukumar538&layout=compact&theme=tokyonight&hide_border=true&hide=html,css&langs_count=6" width="40%"/>
+
+  <img src="https://komarev.com/ghpvc/?username=topukumar538&style=flat-square&color=blue"/>
+
 </p>
+
