@@ -14,7 +14,7 @@ I build production-quality backend systems and AI-powered applications — real 
 ### OpsIQ — AI-Powered Ops Intelligence Platform
 > Multi-agent incident investigation system built on a LangGraph DAG
 
-[Code]({OPSIQ_REPO_URL}) · [Live Demo]({HUGGINGFACE_SPACE_URL})
+[Code](https://github.com/topukumar538/OpsIQ-ai) · [Live Demo](https://topukumar-opsiq.hf.space/app)
 
 - **5-node LangGraph DAG** — log analysis and timeline extraction run in parallel and join at root-cause inference, over three temperature-tuned LLM instances (0.7 chat / 0.3 RAG / 0.1 postmortem) isolating generative, grounded and deterministic work
 - **Verified against 3 documented production incidents** — GitLab 2017, Cloudflare 2019, AWS 2020 — replayed through the pipeline, asserting both root-cause category matches and domain-specific terms drawn from the published postmortems
@@ -28,7 +28,7 @@ I build production-quality backend systems and AI-powered applications — real 
 ### ContentPlatform — Personalized Recommendation Engine
 > Production-style backend with a slot-based explore–exploit ranker
 
-[Code]({CONTENTPLATFORM_REPO_URL}) · [Live Demo]({CONTENTPLATFORM_DEMO_URL})
+[Code](https://github.com/topukumar538/content-recommendation-platform) · [Live Demo](https://topukumar-content-recommendation-platform.hf.space/app/index.html)
 
 - **99% success rate at 100 concurrent users (~800ms p95)** — load tested with Locust from 10 to 500 users, and root-caused the failure at 500 as database connection pool exhaustion
 - **No single category dominates the feed** — capped at 3 of the top 5 slots per page by a slot-based ranker using softmax sampling at temp=0.7 with 10% random injection
